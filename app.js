@@ -7,7 +7,7 @@ function myFunction() {
         var json = JSON.parse(this.responseText);
         for (var i = 0; i < json.length; i++) {
             buildHTML += "<li>";
-            buildHTML += json[i].company;
+            buildHTML += json[i].name.first + " " + json[i].name.last + ", Eye Color: " + json[i].eyeColor;
             buildHTML += "</li>";
         }
     }
